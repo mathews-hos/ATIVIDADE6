@@ -35,9 +35,8 @@
                 <div class="col-lg-3 col-xl-2 col-md-4 col-4 ">
                     <h2>tabuada</h2>
                     <div class="input-group">
-                        <input class="form-control" id="tabuada" type="text">
-                        <button class="btn btn-outline-secondary" id="btntabuela"
-                            onclick="tabuada(); document.getElementById('btntabuela2').click()">calcular</button>
+                        <input autofocus class="form-control" id="tabuada" type="text">
+                        <button class="btn btn-outline-secondary" id="btntabuela" onclick="tabuada()">calcular</button>
                     </div>
                 </div>
                 <div class="col-12">
@@ -124,10 +123,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <!-- <button class="btn" id="btntabuela2" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#tabuela" aria-expanded="false" aria-controls="tabuela">
-                                △
-                            </button> -->
                         </div>
                     </div>
                 </div>
@@ -139,12 +134,25 @@
                         <button class="btn btn-outline-secondary" onclick="showpar()">calcular</button>
                     </div>
                 </div>
-                <div class="col"></div>
+                <div class="col">
+                    <div class="table-responsive" style="width: fit-content;">
+                        <table class="table">
+                            <tbody>
+                                <tr></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <input class="form-control" id="tabuada" type="text" placeholder="proximo número ou -1 para fechar">
+                        <button class="btn btn-outline-secondary" onclick="somar()">calcular</button>
+                    </div>
+                </div>
                 <div class="col"></div>
-                <div class="col"></div>
-            </div>
+            </div> -->
         </div>
     </main>
 
