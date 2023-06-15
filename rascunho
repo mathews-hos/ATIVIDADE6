@@ -1,0 +1,77 @@
+<tbody>
+    <thead>
+        <th colspan="6">tabuada do 1</th>
+        <th colspan="6">tabuada do 2</th>
+        <th colspan="6">tabuada do 3</th>
+        <th colspan="6">tabuada do 4</th>
+        <th colspan="6">tabuada do 5</th>
+        <th colspan="6">tabuada do 6</th>
+        <th colspan="6">tabuada do 7</th>
+        <th colspan="6">tabuada do 8</th>
+        <th colspan="6">tabuada do 9</th>
+        <th colspan="6">tabuada do 10</th>
+    </thead>
+    <tr>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+        <td>|</td>
+        <td class="multiplicando"></td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="resultado"></td>
+    </tr>
+
+</tbody>
