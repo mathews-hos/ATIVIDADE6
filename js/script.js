@@ -9,7 +9,8 @@ function tema() {
     }
 };
 function tabuada() {
-    const num = parseFloat(document.getElementById("tabuada").value)
+    const input = document.getElementById("tabuada")
+    const num = parseFloat(input.value)
     const listaresul = document.getElementsByClassName("produto");
     const listamultiplicar = document.getElementsByClassName("multiplicar")
     if (num && num != 0) {
@@ -26,6 +27,7 @@ function tabuada() {
             multiplicar.innerHTML = "-"
             produto.innerHTML = "-"
         }
-
     }
+    input.focus()
+    input.value = ""
 }
