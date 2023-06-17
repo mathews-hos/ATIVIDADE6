@@ -16,7 +16,7 @@ function tabuenter(tecra){
     } else if (tecra.key == 'Enter') {
         tabuada()
     }
-    console.log(tecra)
+    
     if ((tecra.key >=0 || tecra.key =='.') && !(tecra.key==" ")){
         console.log('entrou')
         if (tecra.key >= 0) {
