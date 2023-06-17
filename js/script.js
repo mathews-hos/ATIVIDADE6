@@ -8,6 +8,32 @@ function tema() {
 
     }
 };
+function tabuenter(tecra){
+    
+    if (tecra.key == 'Enter' && !document.getElementById('tabuela').classList.contains('show') && tecra.srcElement.value) {
+        document.getElementById('btntabuela').click()
+        tabuada()
+    } else if (tecra.key == 'Enter') {
+        tabuada()
+    }
+    console.log(tecra)
+    if ((tecra.key >=0 || tecra.key =='.') && !(tecra.key==" ")){
+        console.log('entrou')
+        if (tecra.key >= 0) {
+            return true
+        }
+        if(tecra.key == '.'){
+            if (tecra.srcElement.value.includes('.')|| tecra.srcElement.value=="") {
+                return false
+            } else{
+                return true
+            }
+        }
+    } else {
+            return false
+    }
+}
+
 function tabuada() {
     const input = document.getElementById("tabuada")
     const num = parseFloat(input.value)
@@ -19,6 +45,7 @@ function tabuada() {
             const produto = listaresul[i];
             multiplicar.innerHTML = num
             produto.innerHTML = num * (i + 1)
+            input.setAttribute('placeholder', input.value)
         }
     } else {
         for (let i = 0; i < 10; i++) {
@@ -26,6 +53,11 @@ function tabuada() {
             const produto = listaresul[i];
             multiplicar.innerHTML = "-"
             produto.innerHTML = "-"
+            input.setAttribute('placeholder', 'digite um número real')
+        }
+        if (document.getElementById('tabuela').classList.contains('show')) {
+            document.getElementById('btntabuela').click()
+
         }
     }
     input.focus()
