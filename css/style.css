@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "roboto";
+    font-family: "robotoo";
     src:url("../font/Roboto-Bold.ttf")
 }
 
 header {
-    font-family:"roboto";
+    font-family:"robotoo";
 }
 
-:root,
+/* :root,
 [data-bs-theme=light] {
     
 }
@@ -15,7 +15,7 @@ header {
 :root,
 [data-bs-theme=dark] {
 
-}
+} */
 
 .btn-info {
     --bs-btn-color: #000;
