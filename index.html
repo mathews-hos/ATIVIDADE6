@@ -31,10 +31,14 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="mb-3 col-lg-3 col-xl-2 col-md-4 col-4 ">
-                    <label for="tabuada"><h2>tabuada</h2></label>
+                    <label for="tabuada">
+                        <h2>tabuada</h2>
+                    </label>
                     <div class="">
-                        <input autofocus class="form-control " id="tabuada" onkeypress="return tabuenter(event)" placeholder="" type="text">
-                        <button class="collapse" id="btntabuela"  type="button" data-bs-toggle="collapse" data-bs-target="#tabuela" aria-expanded="false" aria-controls="tabuela">calcular</button>
+                        <input autofocus class="form-control " id="tabuada" onkeypress="return tabuenter(event)"
+                            placeholder="" type="text">
+                        <button class="collapse" id="btntabuela" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#tabuela" aria-expanded="false" aria-controls="tabuela">calcular</button>
                     </div>
                 </div>
                 <div class="col-12">
@@ -121,37 +125,53 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <button class="btn btn-outline-secondary" onclick="document.getElementById('btntabuela').click()">△</button>
+                            <button class="btn btn-outline-secondary"
+                                onclick="document.getElementById('btntabuela').click()">△</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="my-4 col-lg-3 col-xl-2 col-md-4 col-4">
-                    <label for="pares"><h2>pares</h2></label>
+                    <label for="pares">
+                        <h2>pares</h2>
+                    </label>
                     <div class="">
                         <input class="form-control" id="pares" onkeypress="return parenter(event)" type="text">
-                        <button class="collapse" id="btntapares"  type="button" data-bs-toggle="collapse" data-bs-target="#tapares" aria-expanded="false" aria-controls="tapares">calcular</button>
+                        <button class="collapse" id="btntapares" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#tapares" aria-expanded="false" aria-controls="tapares">calcular</button>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="p-1 collapse" id="tapares">
-                        <button class="btn btn-outline-secondary" onclick="document.getElementById('btntapares').click()">△</button>
-                        <ul  id="lispar">
-                            
+                        <button class="btn btn-outline-secondary"
+                            onclick="document.getElementById('btntapares').click()">△</button>
+                        <ul id="lispar">
+
                         </ul>
                     </div>
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col">
-                    <div class="input-group">
-                        <input class="form-control" id="tabuada" type="text" placeholder="proximo número ou -1 para fechar">
-                        <button class="btn btn-outline-secondary" onclick="somar()">calcular</button>
+            <div class="row">
+                <div class="my-4 col-lg-3 col-xl-2 col-md-4 col-4">
+                    <div class="">
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">FIBONACCI
+                        </button>
+                    </div>
+                    <div class="modal fade" id="modal-fibonacci" tabindex="-1" aria-labelledby="label-titulo"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header"></div>
+                                <div class="modal-body"></div>
+                                <div class="modal-footer"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col"></div>
-            </div> -->
+            </div>
         </div>
     </main>
 

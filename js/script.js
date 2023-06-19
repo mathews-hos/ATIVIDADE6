@@ -8,29 +8,29 @@ function tema() {
 
     }
 };
-function tabuenter(tecra){
-    
+function tabuenter(tecra) {
+
     if (tecra.key == 'Enter' && !document.getElementById('tabuela').classList.contains('show') && tecra.srcElement.value) {
         document.getElementById('btntabuela').click()
         tabuada(tecra.srcElement)
     } else if (tecra.key == 'Enter') {
         tabuada(tecra.srcElement)
     }
-    
-    if ((tecra.key >=0 || tecra.key =='.') && !(tecra.key==" ")){
+
+    if ((tecra.key >= 0 || tecra.key == '.') && !(tecra.key == " ")) {
         console.log('entrou')
         if (tecra.key >= 0) {
             return true
         }
-        if(tecra.key == '.'){
-            if (tecra.srcElement.value.includes('.')|| tecra.srcElement.value=="") {
+        if (tecra.key == '.') {
+            if (tecra.srcElement.value.includes('.') || tecra.srcElement.value == "") {
                 return false
-            } else{
+            } else {
                 return true
             }
         }
     } else {
-            return false
+        return false
     }
 }
 
@@ -76,14 +76,14 @@ function parenter(tecra) {
     } else if (tecra.key == 'Enter') {
         pares(tecra.srcElement)
     }
-    
-    if ((tecra.key >=0) && !(tecra.key==" ")){
+
+    if ((tecra.key >= 0) && !(tecra.key == " ")) {
         console.log('entrou')
         if (tecra.key >= 0) {
             return true
         }
     } else {
-            return false
+        return false
     }
 }
 // input id pares
