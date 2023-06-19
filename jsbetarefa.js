@@ -85,6 +85,21 @@ async function main() {
         //     console.log(x + '\x1b[31m reprovado\x1b[0m')
         // }
     })
+
+    console.log(alunos.indexOf("Lucas"))
+
+    console.log(alunos.findIndex(nota => nota > 9))
+
+    console.log(alunos.includes("Lucas"))
+
+    media = notas.reduce((nota1, nota2) => nota1 + nota2) / notas.length
+    console.log(media)
+
+    console.log(notas.every(nota => nota >= media))
+    console.log(notas.some(nota => nota > media))
+
+
+
     await prompt() == "sair" ? process.exit() : process.stdin.pause();
 
 }
