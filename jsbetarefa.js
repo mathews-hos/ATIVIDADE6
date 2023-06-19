@@ -64,10 +64,7 @@ async function main() {
     await prompt()
     // console.table(notas)
     notas = notas.map(x => parseFloat(x) + 1)
-    bonota = notas.filter(nota => {
-
-        return nota >= 7
-    })
+    bonota = notas.filter(nota => nota >= 7)
 
     console.table(bonota)
     await prompt()
