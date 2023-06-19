@@ -72,18 +72,22 @@ async function main() {
     alunos.forEach((nome, index) => {
         notalunos.push(`${nome} - ${notas[index]}`)
     })
+
     console.table(notalunos)
     await prompt()
     // console.table(alunos)
     // console.table(notas)
     // console.table(bonota)
+
     notas.forEach(x => {
+
         x >= 7 ? console.log(x + '\x1b[32m aprovado\x1b[0m') : console.log(x + '\x1b[31m reprovado\x1b[0m')
         // if (x >= 7) {
         //     console.log(x + '\x1b[32m aprovado\x1b[0m')
         // } else {
         //     console.log(x + '\x1b[31m reprovado\x1b[0m')
         // }
+
     })
 
     console.log(alunos.indexOf("Lucas"))
@@ -98,9 +102,7 @@ async function main() {
     console.log(notas.every(nota => nota >= media))
     console.log(notas.some(nota => nota > media))
 
-
-
-    await prompt() == "sair" ? process.exit() : process.stdin.pause();
+    await prompt() == "sair" ? process.exit() : process.stdin.close();
 
 }
 main()
