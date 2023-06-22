@@ -1,18 +1,3 @@
-
-
-// 6) Utilize o método delete( ) para remover o 4º elemento do mapa.
-
-// 7) Utilize o método has( ) para verificar se existe algum aluno chamado "Jon Snow" neste mapa.
-
-// 8) Mostre todas as chaves do mapa utilizando o método keys( ).
-
-// 9) Mostre todos os valores do mapa utilizando o método values( ).
-
-// 10) Mostre as chaves e seus respectivos valores utilizando o método entries( ).
-
-
-
-
 const prompt = require('prompt-sync')();
 
 const alunos = ["Samuel", "Suellen", "André", "Brunno", "Carlos", "David", "Esther", "Gabriel", "Ilton", "João vitor", "Lucas", "Marcelo", "Mariana", "Mathews", "Rafael", "Ramon", "Ricardo"]
@@ -54,9 +39,30 @@ alunosComNota.forEach(aluno => {
 })
 
 console.table(alunosComNota)
-mapalunosENotas.forEach((x,y,)=> { console.log(x,y) })
+mapalunosENotas.forEach((x, y,) => { console.log(x, y) })
 console.table(mapalunosENotas)
 
 // 5) Utilize o método get( ) para obter a nota do 5º elemento do mapa.
-quintoelemento = mapalunosENotas[alunos[4]]
-console.log(quintoelemento,alunos[4],mapalunosENotas[alunos[4]] )
+quintoelemento = mapalunosENotas.get(alunos[4])
+// console.log(quintoelemento)
+
+// 6) Utilize o método delete( ) para remover o 4º elemento do mapa.
+
+mapalunosENotas.delete(alunos[3])
+console.table(mapalunosENotas)
+
+// 7) Utilize o método has( ) para verificar se existe algum aluno chamado "Jon Snow" neste mapa.
+
+console.log(mapalunosENotas.has('JonSnow'))
+
+// 8) Mostre todas as chaves do mapa utilizando o método keys( ).
+
+console.log(mapalunosENotas.keys())
+
+// 9) Mostre todos os valores do mapa utilizando o método values( ).
+
+console.log(mapalunosENotas.values())
+
+// 10) Mostre as chaves e seus respectivos valores utilizando o método entries( ).
+
+console.log(mapalunosENotas.entries())
