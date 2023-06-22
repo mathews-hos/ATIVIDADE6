@@ -100,3 +100,12 @@ function pares(input) {
     input.focus()
     input.value = ""
 }
+
+function fibonacci() {
+	input = document.getElementById("fibo");
+	table = document.getElementById("fibotable");
+	for(i=1, b=1, c=1; i<=parseInt(input.value); i++){
+		listabela = [b,'+', c,'=',i]
+		if(b+c == i){}
+	}
+}

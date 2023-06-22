@@ -147,7 +147,6 @@
                         <button class="btn btn-outline-secondary"
                             onclick="document.getElementById('btntapares').click()">△</button>
                         <ul id="lispar">
-
                         </ul>
                     </div>
                 </div>
@@ -156,16 +155,33 @@
                 <div class="my-4 col-lg-3 col-xl-2 col-md-4 col-4">
                     <div class="">
                         <button type="button" class="btn btn-info" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">FIBONACCI
+                            data-bs-target="#modal-fibonacci">FIBONACCI
                         </button>
                     </div>
-                    <div class="modal fade" id="modal-fibonacci" tabindex="-1" aria-labelledby="label-titulo"
-                        aria-hidden="true">
+                    <div class="modal fade show" id="modal-fibonacci" data-bs-backdrop="static" tabindex="-1" aria-labelledby="label-titulo" aria-modal="true" role="dialog" style="display: block;">
+                    <!-- <div class="modal fade " id="modal-fibonacci" data-bs-backdrop="static" tabindex="-1" aria-labelledby="label-titulo"
+                        aria-hidden="true"> -->
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header"></div>
-                                <div class="modal-body"></div>
-                                <div class="modal-footer"></div>
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="label-titulo">Fibonacci e sua sequencia</h1>
+                                    <button type="button" data-bs-dismiss="modal" aria-label="close" class="btn-close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group"> 
+                                        <div class="form-floating">
+                                            <input class="form-control" type="text" id="fibo" placeholder="número inteiro">
+                                            <label for="fibo">
+                                                número inteiro
+                                            </label>
+                                        </div>
+                                        <button class="btn btn-outline-secondary" onclick="fibonacci()">calcular</button>
+                                    </div>
+                                    <table class="table">
+                                        <tbody id="fibotable">
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
