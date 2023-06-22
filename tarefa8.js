@@ -66,3 +66,14 @@ console.log(mapalunosENotas.values())
 // 10) Mostre as chaves e seus respectivos valores utilizando o método entries( ).
 
 console.log(mapalunosENotas.entries())
+
+const chaves = mapalunosENotas.keys();
+
+// Percorrendo o iterador das chaves
+for (abelha of chaves) {
+    console.log(abelha, chaves)
+}
+
+// Convertendo o iterador em um array de chaves
+const arrayDeChaves = Array.from(chaves);
+console.log(arrayDeChaves);
