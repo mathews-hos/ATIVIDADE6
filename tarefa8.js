@@ -57,7 +57,7 @@ console.log(mapalunosENotas.has('JonSnow'))
 
 // 8) Mostre todas as chaves do mapa utilizando o método keys( ).
 
-console.log(mapalunosENotas.keys())
+console.log(Array.from(mapalunosENotas.keys()), "caraca")
 
 // 9) Mostre todos os valores do mapa utilizando o método values( ).
 
@@ -67,13 +67,3 @@ console.log(mapalunosENotas.values())
 
 console.log(mapalunosENotas.entries())
 
-const chaves = mapalunosENotas.keys();
-
-// Percorrendo o iterador das chaves
-for (abelha of chaves) {
-    console.log(abelha, chaves)
-}
-
-// Convertendo o iterador em um array de chaves
-const arrayDeChaves = Array.from(chaves);
-console.log(arrayDeChaves);
